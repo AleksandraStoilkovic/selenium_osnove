@@ -37,7 +37,6 @@ public class Zadatak4 {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.calculatorsoup.com/calculators/math/basic.php");
-		Thread.sleep(5000);
 		for (int i = 0; i < razbijena.size(); i++) {
 			driver.findElement(By.xpath("//*[@value='" + razbijena.get(i) + "']")).click();
 			Thread.sleep(500);
