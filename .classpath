@@ -82,5 +82,7 @@
 	<classpathentry kind="lib" path="lib/selenium-support-4.4.0-sources.jar"/>
 	<classpathentry kind="lib" path="lib/selenium-support-4.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/WIN 10/Downloads/ashot-1.5.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
