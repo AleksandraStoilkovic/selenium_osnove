@@ -1,57 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12350" started-at="2022-09-20T10:53:00 CEST" finished-at="2022-09-20T10:53:12 CEST">
+  <suite name="Default suite" duration-ms="19809" started-at="2022-09-21T15:42:14 CEST" finished-at="2022-09-21T15:42:34 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12350" started-at="2022-09-20T10:53:00 CEST" finished-at="2022-09-20T10:53:12 CEST">
-      <class name="d19_09_2022.BootstrapTableTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="setup" is-config="true" duration-ms="2407" started-at="2022-09-20T10:53:00 CEST" finished-at="2022-09-20T10:53:02 CEST">
+    <test name="Default test" duration-ms="19809" started-at="2022-09-21T15:42:14 CEST" finished-at="2022-09-21T15:42:34 CEST">
+      <class name="d20_09_2022tests.AutomationPracticeTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:d20_09_2022tests.AutomationPracticeTests@64f6106c]" name="beforeClass" is-config="true" duration-ms="2398" started-at="2022-09-21T15:42:14 CEST" finished-at="2022-09-21T15:42:17 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="beforeMethod" is-config="true" duration-ms="2552" started-at="2022-09-20T10:53:02 CEST" finished-at="2022-09-20T10:53:05 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="editRow()[pri:100, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="editRow" duration-ms="1717" started-at="2022-09-20T10:53:05 CEST" finished-at="2022-09-20T10:53:06 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editRow -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-20T10:53:06 CEST" finished-at="2022-09-20T10:53:06 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="beforeMethod" is-config="true" duration-ms="1811" started-at="2022-09-20T10:53:06 CEST" finished-at="2022-09-20T10:53:08 CEST">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d20_09_2022tests.AutomationPracticeTests@64f6106c]" name="beforeMethod" is-config="true" duration-ms="5312" started-at="2022-09-21T15:42:17 CEST" finished-at="2022-09-21T15:42:22 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deleteRows()[pri:200, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="deleteRows" duration-ms="1094" started-at="2022-09-20T10:53:08 CEST" finished-at="2022-09-20T10:53:09 CEST">
+        <test-method status="PASS" signature="headerLinksCheck()[pri:4, instance:d20_09_2022tests.AutomationPracticeTests@64f6106c]" name="headerLinksCheck" duration-ms="11373" started-at="2022-09-21T15:42:22 CEST" finished-at="2022-09-21T15:42:33 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteRows -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="beforeMethod" is-config="true" duration-ms="1388" started-at="2022-09-20T10:53:09 CEST" finished-at="2022-09-20T10:53:11 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-20T10:53:09 CEST" finished-at="2022-09-20T10:53:09 CEST">
+        </test-method> <!-- headerLinksCheck -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d20_09_2022tests.AutomationPracticeTests@64f6106c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-21T15:42:33 CEST" finished-at="2022-09-21T15:42:33 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="TakeAScreenshot()[pri:300, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="TakeAScreenshot" duration-ms="617" started-at="2022-09-20T10:53:11 CEST" finished-at="2022-09-20T10:53:11 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TakeAScreenshot -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-09-20T10:53:11 CEST" finished-at="2022-09-20T10:53:11 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:d19_09_2022.BootstrapTableTests@33723e30]" name="afterClass" is-config="true" duration-ms="730" started-at="2022-09-20T10:53:11 CEST" finished-at="2022-09-20T10:53:12 CEST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:d20_09_2022tests.AutomationPracticeTests@64f6106c]" name="afterClass" is-config="true" duration-ms="694" started-at="2022-09-21T15:42:33 CEST" finished-at="2022-09-21T15:42:34 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- d19_09_2022.BootstrapTableTests -->
+      </class> <!-- d20_09_2022tests.AutomationPracticeTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
