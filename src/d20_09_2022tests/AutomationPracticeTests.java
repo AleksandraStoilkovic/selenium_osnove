@@ -89,25 +89,33 @@ public class AutomationPracticeTests extends BasicTest {
 	}
 
 	@Test(priority = 2)
-	public void topMenuMouseOver() {
+	public void topMenuMouseOver() throws InterruptedException {
 		new Actions(driver).moveToElement(topMenuPage.getWomenLink()).perform();
-		softAssert.assertTrue(topMenuPage.getWomanSubmenu().isDisplayed(), "Woman submenu should be displayed.");
+		Thread.sleep(5000);
+		softAssert.assertTrue(topMenuPage.getWomanSubmenu().getAttribute("style").contains("display: block;"), 
+				"Woman submenu should be displayed.");
 		new Actions(driver).moveToElement(topMenuPage.getDressesLink()).perform();
-		softAssert.assertTrue(topMenuPage.getDressesSubmenu().isDisplayed(), "Dresses submenu should be displayed.");
+		Thread.sleep(5000);
+		softAssert.assertTrue(topMenuPage.getDressesSubmenu().getAttribute("style").contains("display: block;"), 
+				"Dresses submenu should be displayed.");
 		new Actions(driver).moveToElement(topMenuPage.getTShirtsLink()).perform();
-		softAssert.assertFalse(topMenuPage.getWomanSubmenu().isDisplayed(), "Woman submenu should not be displayed.");
-		softAssert.assertFalse(topMenuPage.getDressesSubmenu().isDisplayed(),
+		Thread.sleep(5000);
+		softAssert.assertFalse(topMenuPage.getWomanSubmenu().getAttribute("style").contains("display: block;"),
+				"Woman submenu should not be displayed.");
+		softAssert.assertFalse(topMenuPage.getDressesSubmenu().getAttribute("style").contains("display: block;"),
 				"Dresses submenu should not be displayed.");
+		softAssert.assertAll();
 	}
 
 	@Test(priority = 3)
-	public void phoneNumberVisibilityCheckOnResize() {
+	public void phoneNumberVisibilityCheckOnResize() throws InterruptedException {
 		softAssert.assertTrue(headerPage.getPhoneNumber().isDisplayed(), "Phone number should be displayed");
 		driver.manage().window().setSize(new Dimension(767, 700));
 		softAssert.assertFalse(headerPage.getPhoneNumber().isDisplayed(), "Phone number should not be displayed");
 		driver.manage().window().setSize(new Dimension(768, 700));
 		softAssert.assertTrue(headerPage.getPhoneNumber().isDisplayed(), "Phone number should be displayed");
 		driver.manage().window().maximize();
+		softAssert.assertAll();
 	}
 
 	@Test(priority = 4)
@@ -116,6 +124,7 @@ public class AutomationPracticeTests extends BasicTest {
 		softAssert.assertEquals(driver.getTitle(), "Contact us - My Store", "Not on contact form page");
 		headerPage.getSignInLink().click();
 		softAssert.assertEquals(driver.getTitle(), "Login - My Store", "Not on log in page");
+		softAssert.assertAll();
 	}
 
 }

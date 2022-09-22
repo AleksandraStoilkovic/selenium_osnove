@@ -5,7 +5,7 @@
     <classes>
       <class name="d20_09_2022tests.AutomationPracticeTests">
         <methods>
-          <include name="headerLinksCheck"/>
+          <include name="topMenuMouseOver"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>

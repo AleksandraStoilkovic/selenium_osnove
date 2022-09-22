@@ -17,7 +17,7 @@ public class HeaderPage {
 	}
 
 	public WebElement getPhoneNumber() {
-		return driver.findElement(By.xpath("//*[contains(@class, 'shop-phone')]/strong"));
+		return driver.findElement(By.xpath("//*[contains(@class, 'shop-phone')]"));
 	}
 
 	public WebElement getContactUsLink() {
